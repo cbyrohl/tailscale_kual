@@ -17,8 +17,9 @@ This (very very) simple repo integrates Kindle to your Tailscale network, allowi
 4. Place the tailscale folder into the `extensions` folder on your kindle.
 5. Copy your auth-key from Tailscale into `tailscale/config/auth_key.txt`
 6. (Optional) Set up custom Taildrop target folder by editing `tailscale/config/taildrop_dir.txt` (defaults to `tailscale/taildrop`)
-7. In the KUAL menu, start `tailscaled` first then start `tailscale`.
-10. After connecting the device should add the kindle to your `Machines` page on tailscale admin console. ([this](https://login.tailscale.com/admin/machines)).
+7. (Optional) Set up custom login server (e.g., Headscale) by editing `tailscale/config/login_server.txt` with your server URL (defaults to official Tailscale servers when empty)
+8. In the KUAL menu, start `tailscaled` first then start `tailscale`.
+9. After connecting the device should add the kindle to your `Machines` page on tailscale admin console. ([this](https://login.tailscale.com/admin/machines)).
 
 ## Taildrop:
 1. Send file from source machine to target machine (Kindle)
